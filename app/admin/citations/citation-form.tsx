@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { useFormStatus } from 'react-dom'
 import { createCitationAction, updateCitationAction } from './citations.action'
-import { Citation } from '@prisma/client'
+import type { Citation } from '@prisma/client'
 
 export  function CitationForm(props: {citation?: Citation }) {
     const onsubmit = async (formData: FormData) => {
